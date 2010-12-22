@@ -24,7 +24,7 @@
 	$queries = array(
 		1 =>
 		"SELECT 
-		d.name,dbu.login AS db_login,a.password AS db_password
+		d.name,db.name AS db_name,dbu.login AS db_login,a.password AS db_password
 		FROM domains d
 		INNER JOIN data_bases db ON d.id=db.dom_id
 		LEFT OUTER JOIN db_users dbu ON db.id=dbu.db_id
